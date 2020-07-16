@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inder Oxy gym </title>
+   
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <style>
+/* css reset*/ 
+
+body{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    background: url('victor-freitas-WvDYdXDzkhs-unsplash.jpg');
+    height: 50%;
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.l
+{ 
+    display: inline-block;
+     
+     position: absolute;
+     left: 34px;
+     top: 20px;
+     /*border border-style: dotted;
+  border-color:rgb(233, 223, 224);*/
+    width: 10%; 
+}
+
+/* navbar left side*/
+.l img{
+    width:78%;
+    filter: invert(100%);
+    
+}
+/* navbar middle */
+  .m
+  {
+    font-family: 'Oswald', sans-serif;
+      display: block;
+      width: 40%;
+      margin: 20px auto;
+     
+      top: 20px;
+    /*borderborder-style: double;
+   border-color: lawngreen;*/
+
+      }  
+
+      /* navbar right side*/
+    
+.r
+{
+    display: inline-block;
+     border-width: inherit;
+     position: absolute;
+     right: -314px;
+     top: 20px;
+     width: 36%;
+    /*border  border-style: double;
+  -color: lawngreen;*/
+     
+    
+}
+.navbar
+{
+    display: inline-block;
+}
+.navbar li{
+    
+    display: inline-block;
+    font-size:15px ;
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 9px ;
+    }
+
+.navbar li a:hover, .navbar li a.active
+{
+    color: rgb(224, 103, 188);
+    text-decoration: none;
+    background-color: rgb(197, 219, 73);
+    }
+    .btn
+    {
+        font-family: 'Oswald', sans-serif;
+        padding: 3px 4px;
+        background-color: black;
+        border-radius: 10px;
+        cursor: pointer;
+        color:  white;
+        
+    }
+    .btn:hover
+    {
+        background-color: rgb(214, 74, 151);
+    }
+    .indu
+    {
+        font-family: 'Oswald', sans-serif;
+        color: cornsilk;
+    }
+    .container
+    {
+        border: 2px solid white;
+        margin: 100px 80px;
+        padding: 31px 6px;
+        width: 340px;
+        border-radius: 2px;
+    }
+    .form-group input
+    {
+text-emphasis: center;
+display: block;
+width: 292px;
+padding: 7px;
+border: 2px solid rgb(70, 86, 231);
+border-radius:20px ;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+margin: auto;
+  
+}
+.navbar li a{
+    border: 1px solid rgb(221, 91, 189);
+    
+}
+    .container h1{
+        text-align: center;
+    }
+    </style>
+
+<body>
+   <header class="header">
+<!--left box for logo-->
+    <div class="l">
+     <img src="data:image/jpeg;base64,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" alt=""> 
+      
+
+       </div>
+       <!--mid box for navbar-->
+       <div class="m">
+        <ul class="navbar">
+            <li class="lin"  ><a href ="#" >Home</a></li>
+            <li class="lin"><a href ="#" >About us</a></li>
+            <li class="lin"><a href ="#" >Fitness Calculator</a></li>
+            <li class="lin"><a href ="#" >Contact Us</a></li>
+
+        </ul>
+           </div>
+          
+           <!--right box for buttons-->
+
+           <div class="r">
+              <button class="btn">Call Us Now</button>
+              <button class="btn">Email Us</button>
+       </div>
+
+   </header> 
+   <div class="container">
+    <h1>Join the Best Gym of Jammu Now</h1>
+    <form action="noaction.php"></form>
+    <div class="form-group">
+        <input  type="text" name="" placeholder="Enter Your Name">
+        <br>
+        <input type="text" name="" placeholder="Enter Your Age">
+        <br>
+        <input type="text" name="" placeholder="Enter Your Phone Number">
+        <br>
+        <input type="text" name="" placeholder="Enter Your Email-id">
+        <br>
+        <input type="text" name="" placeholder="Enter Your place">
+        <br>
+        <button class="btn"><a href="https://forms.gle/UsxPyJVRoXb4Enuq9" >Submit </a></button>
+        <br>
+       
+        
+    </div>
+
+<br>
+    </div>
+</div>
